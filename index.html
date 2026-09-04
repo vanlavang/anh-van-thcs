@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fix lỗi Safari tự động tạo link làm ẩn số điện thoại và ngày tháng trên nền tối -->
+    <meta name="format-detection" content="telephone=no, date=no, address=no">
     <title>Chiêu Sinh Anh Văn Miễn Phí - Dòng Con Đức Mẹ Đi Viếng</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,6 +170,9 @@
         .contact-box { background: rgba(255,255,255,0.1); display: inline-block; padding: 20px 40px; border-radius: 12px; margin-bottom: 30px; }
         .contact-box p { font-size: 1.2rem; margin: 5px 0; }
         .contact-box strong { color: #FFD700; font-size: 1.4rem; }
+        
+        /* Đoạn CSS này ép màu trắng nếu trình duyệt tự tạo link số điện thoại/ngày tháng */
+        .contact-box a, a[href^="tel"] { color: white; text-decoration: none; }
 
         @media (max-width: 768px) {
             .hero-content { flex-direction: column; text-align: center; }
@@ -279,7 +284,7 @@
                 <div class="facility-card-img">
                     <img src="chieusinh.png" style="object-position: top;" alt="Màn hình tương tác">
                     <div class="facility-info">
-                        <h3>Màn Hình Tương Tác 55 Inch</h3>
+                        <h3>Màn Hình Tương Tác 65 Inch</h3>
                         <p>Bài giảng sắc nét, sinh động, dễ hiểu, dễ nhớ. Bàn ghế không gian học tập bố trí thoải mái, yên tĩnh giúp tập trung cao độ.</p>
                     </div>
                 </div>
@@ -508,10 +513,11 @@
                 “Tri thức dẫn lối – yêu thương đồng hành – ước mơ chắp cánh.”
             </div>
             
-            <div class="contact-box">
-                <p>📍 <strong>Địa chỉ:</strong> Dòng Con Đức Mẹ Đi Viếng - 483A Chi Lăng, Phú Xuân, TP. Huế</p>
-              
-            </div>
+         <div class="contact-box">
+    <p>📍 <strong>Địa chỉ:</strong> Dòng Con Đức Mẹ Đi Viếng - 483A Chi Lăng, Phú Xuân, TP. Huế</p>
+    <p>📞 <strong>Điện thoại liên hệ (Zalo):</strong> 0392096932</p>
+    <p>📅 <strong>Ngày khai giảng:</strong> 5h30 ngày 12/09/2026</p>
+</div>
             
             <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
                 © 2026 Chương trình giáo dục cộng đồng dành cho học sinh Cấp 2.
